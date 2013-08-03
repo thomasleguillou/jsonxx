@@ -12,6 +12,6 @@ testList =  [
 'jsonxx_test.cc',
 ]
 
-localEnv.Program('jssoxx_test',testList, CXXFLAGS='-Wall -W -Wextra')
+localEnv.Program('jsonxx_test',testList, CXXFLAGS='-Wall -W -Wextra')
 
 Return('jsonxx')

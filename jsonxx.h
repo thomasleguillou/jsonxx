@@ -175,6 +175,7 @@ class Value {
 
   template<typename T>
   void import( const T &t ) {
+	(void)t;
     reset();
     type_ = INVALID_;
     // debug
@@ -210,7 +211,8 @@ class Value {
   }
 #endif
   void import( const Null &t ) {
-    reset();
+	(void)t;
+	reset();
     type_ = NULL_;
   }
   void import( const String &s ) {
